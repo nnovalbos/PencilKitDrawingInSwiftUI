@@ -11,6 +11,14 @@
 		2A8FF1F1270052E1005C0F27 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A8FF1F0270052E1005C0F27 /* ContentView.swift */; };
 		2A8FF1F3270052E3005C0F27 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2A8FF1F2270052E3005C0F27 /* Assets.xcassets */; };
 		2A8FF1F6270052E3005C0F27 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2A8FF1F5270052E3005C0F27 /* Preview Assets.xcassets */; };
+		2A8FF201270053F6005C0F27 /* DrawingDocModel.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 2A8FF1FF270053F6005C0F27 /* DrawingDocModel.xcdatamodeld */; };
+		2A8FF204270054F6005C0F27 /* DrawingDocument.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A8FF203270054F6005C0F27 /* DrawingDocument.swift */; };
+		2A8FF2072700561C005C0F27 /* CoreDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A8FF2062700561C005C0F27 /* CoreDataManager.swift */; };
+		2A8FF20B27007206005C0F27 /* DrawingManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A8FF20A27007206005C0F27 /* DrawingManager.swift */; };
+		2A8FF20E270081BD005C0F27 /* DrawingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A8FF20D270081BD005C0F27 /* DrawingViewController.swift */; };
+		2A8FF2112700D4D0005C0F27 /* DrawingWrapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A8FF2102700D4D0005C0F27 /* DrawingWrapper.swift */; };
+		2A8FF2132700D833005C0F27 /* AddNewDocument.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A8FF2122700D833005C0F27 /* AddNewDocument.swift */; };
+		2A8FF2152700E191005C0F27 /* EmptyView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A8FF2142700E191005C0F27 /* EmptyView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -20,6 +28,14 @@
 		2A8FF1F2270052E3005C0F27 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		2A8FF1F5270052E3005C0F27 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		2A8FF1F7270052E3005C0F27 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2A8FF200270053F6005C0F27 /* DrawingDocModel.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = DrawingDocModel.xcdatamodel; sourceTree = "<group>"; };
+		2A8FF203270054F6005C0F27 /* DrawingDocument.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DrawingDocument.swift; sourceTree = "<group>"; };
+		2A8FF2062700561C005C0F27 /* CoreDataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataManager.swift; sourceTree = "<group>"; };
+		2A8FF20A27007206005C0F27 /* DrawingManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DrawingManager.swift; sourceTree = "<group>"; };
+		2A8FF20D270081BD005C0F27 /* DrawingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DrawingViewController.swift; sourceTree = "<group>"; };
+		2A8FF2102700D4D0005C0F27 /* DrawingWrapper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DrawingWrapper.swift; sourceTree = "<group>"; };
+		2A8FF2122700D833005C0F27 /* AddNewDocument.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddNewDocument.swift; sourceTree = "<group>"; };
+		2A8FF2142700E191005C0F27 /* EmptyView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmptyView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -52,8 +68,12 @@
 		2A8FF1ED270052E1005C0F27 /* PencilKitDrawingInSwiftUI */ = {
 			isa = PBXGroup;
 			children = (
+				2A8FF20F2700D4BB005C0F27 /* Views */,
+				2A8FF20C270081A3005C0F27 /* ViewControllers */,
+				2A8FF208270071E8005C0F27 /* Managers */,
+				2A8FF202270054D9005C0F27 /* Models */,
+				2A8FF1FE270053D0005C0F27 /* CoreData */,
 				2A8FF1EE270052E1005C0F27 /* PencilKitDrawingInSwiftUIApp.swift */,
-				2A8FF1F0270052E1005C0F27 /* ContentView.swift */,
 				2A8FF1F2270052E3005C0F27 /* Assets.xcassets */,
 				2A8FF1F7270052E3005C0F27 /* Info.plist */,
 				2A8FF1F4270052E3005C0F27 /* Preview Content */,
@@ -67,6 +87,50 @@
 				2A8FF1F5270052E3005C0F27 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		2A8FF1FE270053D0005C0F27 /* CoreData */ = {
+			isa = PBXGroup;
+			children = (
+				2A8FF1FF270053F6005C0F27 /* DrawingDocModel.xcdatamodeld */,
+			);
+			path = CoreData;
+			sourceTree = "<group>";
+		};
+		2A8FF202270054D9005C0F27 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				2A8FF203270054F6005C0F27 /* DrawingDocument.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		2A8FF208270071E8005C0F27 /* Managers */ = {
+			isa = PBXGroup;
+			children = (
+				2A8FF2062700561C005C0F27 /* CoreDataManager.swift */,
+				2A8FF20A27007206005C0F27 /* DrawingManager.swift */,
+			);
+			path = Managers;
+			sourceTree = "<group>";
+		};
+		2A8FF20C270081A3005C0F27 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				2A8FF20D270081BD005C0F27 /* DrawingViewController.swift */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		2A8FF20F2700D4BB005C0F27 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				2A8FF2102700D4D0005C0F27 /* DrawingWrapper.swift */,
+				2A8FF1F0270052E1005C0F27 /* ContentView.swift */,
+				2A8FF2122700D833005C0F27 /* AddNewDocument.swift */,
+				2A8FF2142700E191005C0F27 /* EmptyView.swift */,
+			);
+			path = Views;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -139,7 +203,15 @@
 			buildActionMask = 2147483647;
 			files = (
 				2A8FF1F1270052E1005C0F27 /* ContentView.swift in Sources */,
+				2A8FF201270053F6005C0F27 /* DrawingDocModel.xcdatamodeld in Sources */,
 				2A8FF1EF270052E1005C0F27 /* PencilKitDrawingInSwiftUIApp.swift in Sources */,
+				2A8FF2132700D833005C0F27 /* AddNewDocument.swift in Sources */,
+				2A8FF20E270081BD005C0F27 /* DrawingViewController.swift in Sources */,
+				2A8FF2112700D4D0005C0F27 /* DrawingWrapper.swift in Sources */,
+				2A8FF2152700E191005C0F27 /* EmptyView.swift in Sources */,
+				2A8FF2072700561C005C0F27 /* CoreDataManager.swift in Sources */,
+				2A8FF20B27007206005C0F27 /* DrawingManager.swift in Sources */,
+				2A8FF204270054F6005C0F27 /* DrawingDocument.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -328,6 +400,19 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		2A8FF1FF270053F6005C0F27 /* DrawingDocModel.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				2A8FF200270053F6005C0F27 /* DrawingDocModel.xcdatamodel */,
+			);
+			currentVersion = 2A8FF200270053F6005C0F27 /* DrawingDocModel.xcdatamodel */;
+			path = DrawingDocModel.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = 2A8FF1E3270052E1005C0F27 /* Project object */;
 }
